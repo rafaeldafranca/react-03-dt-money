@@ -26,7 +26,6 @@ padding: 0 1.25rem;
 border-radius: 6px;
 cursor: pointer;
 
-
 &:hover {
     background-color: ${(props) => props.theme["green-700"]};
     transition: background-color 0.2s;

@@ -10,6 +10,7 @@ Orientaçoes:
 
 - styled-components
 - @types/styled-components -D
+- phosphor-react
 
 ### como usar ?
 
