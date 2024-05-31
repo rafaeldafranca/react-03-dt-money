@@ -11,6 +11,8 @@ Orientaçoes:
 - styled-components
 - @types/styled-components -D
 - phosphor-react
+- @radix-ui/react-dialo
 
-### como usar ?
+### Links importantes
+- [radix-ui](https://www.radix-ui.com/)
 
