@@ -1,3 +1,4 @@
+import { useContext } from 'react'
 import { Header } from '../../components/Header'
 import { Summary } from '../../components/Summary'
 import { SearchForm } from './components/SearchForm'
@@ -6,8 +7,11 @@ import {
   TransactionContainer,
   TransactionTable,
 } from './styles'
+import { TransactionContext } from '../../contexts/TransactionsContext'
 
 export function Transactions() {
+  const { transactions } = useContext(TransactionContext)
+
   return (
     <div>
       <Header />
@@ -16,22 +20,21 @@ export function Transactions() {
         <SearchForm />
         <TransactionTable>
           <tbody>
-            <tr>
-              <td width="50%">Desenvolvimento de site</td>
-              <td>
-                <PriceHighlight variant="income">R$ 12.000,00</PriceHighlight>
-              </td>
-              <td>Venda</td>
-              <td>31/05/2024</td>
-            </tr>
-            <tr>
-              <td width="50%">Hamburguer</td>
-              <td>
-                <PriceHighlight variant="outcome">-R$ 59,00</PriceHighlight>
-              </td>
-              <td>Alimentação</td>
-              <td>28/05/2024</td>
-            </tr>
+            {transactions.map((transaction) => {
+              return (
+                // eslint-disable-next-line react/jsx-key
+                <tr key={transaction.id}>
+                  <td width="50%">{transaction.description}</td>
+                  <td>
+                    <PriceHighlight variant={transaction.type}>
+                      {transaction.price}
+                    </PriceHighlight>
+                  </td>
+                  <td>{transaction.category}</td>
+                  <td>{transaction.createdAt.toString()}</td>
+                </tr>
+              )
+            })}
           </tbody>
         </TransactionTable>
       </TransactionContainer>
