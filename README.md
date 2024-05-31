@@ -11,7 +11,8 @@ Orientaçoes:
 - styled-components
 - @types/styled-components -D
 - phosphor-react
-- @radix-ui/react-dialo
+- @radix-ui/react-dialog
+- @radix-ui/react-radio-group
 
 ### Links importantes
 - [radix-ui](https://www.radix-ui.com/)
