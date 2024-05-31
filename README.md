@@ -14,6 +14,9 @@ Orientaçoes:
 - @radix-ui/react-dialog
 - @radix-ui/react-radio-group
 - json-server `desenvolvimento`
+- react-hook-form
+- @hookform/resolvers
+- zod
 
 ### Links importantes
 - [radix-ui](https://www.radix-ui.com/)
