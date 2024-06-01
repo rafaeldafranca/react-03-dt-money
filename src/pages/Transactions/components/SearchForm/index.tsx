@@ -3,7 +3,7 @@ import { SearchFormContainer } from './styles'
 import { useForm } from 'react-hook-form'
 import * as z from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { memo } from 'react'
+// import { memo } from 'react'
 
 /**
  * Por que um componente renderiza ?
