@@ -4,7 +4,7 @@ Projeto de aula da RocketSeat da jornada de React. Projeto [03]
 
 Orientaçoes:
 
-- [Figma DT Money](react-03-dt-money)
+- [Figma DT Money](https://www.figma.com/community/file/1138814493269096792)
 
 ## Dependências [npm install]
 
@@ -17,6 +17,7 @@ Orientaçoes:
 - react-hook-form
 - @hookform/resolvers
 - zod
+- axios
 
 ### Links importantes
 - [radix-ui](https://www.radix-ui.com/)
