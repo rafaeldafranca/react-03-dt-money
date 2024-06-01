@@ -18,6 +18,7 @@ Orientaçoes:
 - @hookform/resolvers
 - zod
 - axios
+- use-context-selector scheduler
 
 ### Links importantes
 - [radix-ui](https://www.radix-ui.com/)
@@ -31,4 +32,9 @@ npm i json-server -D
 - rodando o json-server na porta 3333 com monitoramento com delay de 500
 ```
 npx json-server server.json -p 3333 -w -d 500
+```
+
+## Ajustar problemas de eslint (com ele já configurado)
+```
+npx eslint src --ext .tsx,.ts
 ```
